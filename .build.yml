@@ -25,7 +25,11 @@ tasks:
       python3 -m pip install -r requirements.txt
 
   - check: |
+      set +x
       ansible-lint
+      set -x
 
   - ansible: |
+      set +x
       ansible-playbook --vault-password-file ~/.secret_vault site.yml
+      set -x
