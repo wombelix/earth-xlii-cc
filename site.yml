@@ -4,6 +4,12 @@
 
 ---
 - name: Entrypoint to run all playbooks
+  hosts: all
+  become: false
+  gather_facts: false
 
-- import_playbook: dns.yml
+- name: Import DNS playbook
+  import_playbook: dns.yml
+  vars:
+    hostlist: localhost
 ...

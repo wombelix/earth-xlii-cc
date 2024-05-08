@@ -4,7 +4,7 @@
 
 ---
 - name: "Configure DNS records"
-  hosts: localhost
+  hosts: "{{ hostlist | default('localhost') }}"
   connection: local
   become: false
   gather_facts: false
