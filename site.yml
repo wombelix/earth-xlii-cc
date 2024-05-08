@@ -1,0 +1,5 @@
+---
+- name: Entrypoint to run all playbooks
+
+- import_playbook: dns.yml
+...
