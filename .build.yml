@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2024 Dominik Wombacher <dominik@wombacher.cc>
+#
+# SPDX-License-Identifier: MIT
+
+image: debian/stable
+
+packages:
+  - python3-venv
+  - python3-dev
+  - pkg-config
+
+sources:
+  - https://git.sr.ht/~wombelix/earth-xlii-cc
+
+secrets:
+  - ea615a63-ae64-4e49-adf7-eea1abc09614
+  - f046361b-a086-4a90-aae6-f1a2ff7d6280
+
+tasks:
+  - setup: |
+      cd earth-xlii-cc
+      python3 -m venv venv
+      source venv/bin/activate
+      python3 -m pip install --upgrade pip
+      python3 -m pip install -r requirements.txt
+
+  - check: |
+      ansible-lint
+
+  - ansible: |
+      ansible-playbook --vault-password-file ~/.secret_vault site.yml
