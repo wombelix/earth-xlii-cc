@@ -1,0 +1,30 @@
+# To install the git pre-commit hooks run:
+#   pre-commit install --install-hooks
+# To update the versions:
+#   pre-commit autoupdate
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+  - pre-push
+default_language_version:
+    # force all unspecified python hooks to run python3
+    python: python3
+repos:
+- hooks:
+  - id: end-of-file-fixer
+  - id: check-yaml
+  - id: check-added-large-files
+  - id: check-case-conflict
+  repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+- hooks:
+  - id: commitizen
+    stages:
+    - commit-msg
+    - pre-push
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.25.0
+- hooks:
+  - id: ansible-lint
+  repo: https://github.com/ansible-community/ansible-lint
+  rev: v24.2.3
