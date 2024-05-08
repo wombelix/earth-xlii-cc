@@ -1,0 +1,5 @@
+all:
+  hosts:
+    earth.xlii.cc:
+      ansible_port: 22
+      ansible_host: earth.xlii.cc
