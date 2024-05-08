@@ -8,7 +8,8 @@ SPDX-License-Identifier: MIT
 
 Scripts and playbooks related to the configuration and maintenance of earth.xlii.cc
 
-[![REUSE status](https://api.reuse.software/badge/git.sr.ht/~wombelix/earth-xlii-cc)](https://api.reuse.software/info/git.sr.ht/~wombelix/earth-xlii-cc)
+[![REUSE status](https://api.reuse.software/badge/git.sr.ht/~wombelix/earth-xlii-cc)](https://api.reuse.software/info/git.sr.ht/~wombelix/earth-xlii-cc) 
+[![builds.sr.ht status](https://builds.sr.ht/~wombelix/earth-xlii-cc.svg)](https://builds.sr.ht/~wombelix/earth-xlii-cc?)
 
 ## Source
 
@@ -35,4 +36,3 @@ Unless otherwise stated: `MIT`
 All files contain license information either as `header comment` or `corresponding .license` file.
 
 [REUSE](https://reuse.software) from the [FSFE](https://fsfe.org/) implemented to verify license and copyright compliance.
-
