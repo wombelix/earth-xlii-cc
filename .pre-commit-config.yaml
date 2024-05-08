@@ -6,12 +6,8 @@
 #   pre-commit install --install-hooks
 # To update the versions:
 #   pre-commit autoupdate
-default_install_hook_types:
-  - pre-commit
-  - commit-msg
-  - pre-push
 default_stages:
-  - pre-commit
+  - commit
 repos:
 - hooks:
   - id: end-of-file-fixer
@@ -22,9 +18,6 @@ repos:
   rev: v4.6.0
 - hooks:
   - id: commitizen
-    stages:
-    - commit-msg
-    - pre-push
   repo: https://github.com/commitizen-tools/commitizen
   rev: v3.25.0
 - hooks:
