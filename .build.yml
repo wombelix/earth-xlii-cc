@@ -19,32 +19,22 @@ secrets:
 tasks:
   - setup: |
       cd earth-xlii-cc
-
       python3 -m venv venv
       source venv/bin/activate
       python3 -m pip install --upgrade pip
       python3 -m pip install -r requirements.txt
-
+      # ansible.cfg expects vault password file in same directory
       ln -s ~/.secret_vault .secret_vault
-
       # Install ansible collections first, otherwise ansible-lint will fail
       # https://github.com/ansible/ansible-lint/issues/3636
       ansible-galaxy collection install -v --pre -r requirements.yml
 
   - check: |
       cd earth-xlii-cc
-
       source venv/bin/activate
-
-      set +x
       ansible-lint
-      set -x
 
   - ansible: |
       cd earth-xlii-cc
-
       source venv/bin/activate
-
-      set +x
       ansible-playbook --vault-password-file ~/.secret_vault site.yml
-      set -x
