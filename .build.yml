@@ -25,11 +25,15 @@ tasks:
       python3 -m pip install -r requirements.txt
 
   - check: |
+      cd earth-xlii-cc
+      source venv/bin/activate
       set +x
       ansible-lint
       set -x
 
   - ansible: |
+      cd earth-xlii-cc
+      source venv/bin/activate
       set +x
       ansible-playbook --vault-password-file ~/.secret_vault site.yml
       set -x
