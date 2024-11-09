@@ -48,6 +48,8 @@ tasks:
       # https://github.com/ansible/ansible-lint/issues/3636
       ansible-galaxy collection install -v --pre -r collections/requirements.yml
       ansible-galaxy role install -v -r roles/requirements.yml
+      # Only trust known earth.xlii.cc SSH fingerprints
+      cp files/ssh_fingerprints_earth_xlii_cc.txt ~/.ssh/known_hosts
 
   - check: |
       cd earth-xlii-cc

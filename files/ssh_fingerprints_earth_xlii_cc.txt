@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2024 Dominik Wombacher <dominik@wombacher.cc>
+#
+# SPDX-License-Identifier: MIT
+#
+# ssh-keyscan -t ecdsa,ed25519,rsa -H earth.xlii.cc
+#
+# earth.xlii.cc:22 SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3
+|1|Fws60hEPWKGfGMKKtqXF3ZvsNvA=|EVZZX70U6TGdEVISOp1LFiKc0yM= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDN1i1LINLSFscIvH9RKUqC7yPn2U7xIAIY7QZqTIj4/VdsxRP/c6+ijykngyif9+oUesH9QoTLGGqLTqjgiA/+zaH6uIvCVZUliysWjXyjpbkLFJvfoqoHPPgq0XV0cZnNNWuZJdldYPPkkD9y5l7AB1KMU3iEhP42pBSHV8wlpjnQQCb9eLVnt/4VWt9fha5bZgZmxAfZoyxE5+7Ba+IXJD53vfDVa1xVqNv6W7CJOqJ1r+epwaP707KvaueRSu7iKdr+JM/+8l5abkpSlS+v158ybG3M13kF+sg3Z2tjFtA3Lbfmu/o0FtyBI6Jwp1upSXikAFpcxgp94f7QqeoLQTYossSfKLmwP+EW8UEfcZhvy8+irWksu8K89QPCTdOZVTvZaThs20UjeFlyjPk3gY2z5VfcF4nEb6HpNldQXzKZXRP9gHZycDH/lQIQsLUCcHs/ZoErGDFQi3Uda1UBlB9zUuHirw+FLGNiAVKoEI2u/SRupji/QCPEDBAC9M0=
+# earth.xlii.cc:22 SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3
+|1|zfH7PoqI77TsWUMPdzY7UxuMDvc=|uYhpQgZ8OWKRoEY+xQCSfIwaF6s= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCR4YaRSQULTAIVtzJu3P2eLuLi3avqc6eu1XsohtASZsakcUDtNOY4L0LuOU/K+zOxCZDUMRUbvIPfAwAadyYI=
+# earth.xlii.cc:22 SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3
+|1|QeJrr25rw7YDVoiJ2A/uI77AZtQ=|EyYV/47lW0bKSEDakbwJur3wDYk= ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILXLepR4jtH7BlZkmUfUFJ1HP4ZAf/0tdG8w9BwIQpus
