@@ -11,6 +11,7 @@
 
 - name: Import DNS playbook
   import_playbook: dns.yml
-  vars:
-    hostlist: localhost
+
+- name: Import K3sup playbook
+  import_playbook: k3sup.yml
 ...
