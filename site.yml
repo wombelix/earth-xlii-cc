@@ -14,4 +14,7 @@
 
 - name: Import K3sup playbook
   import_playbook: k3sup.yml
+
+- name: Import Rancher playbook
+  import_playbook: k3sup.yml
 ...

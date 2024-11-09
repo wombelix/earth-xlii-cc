@@ -10,6 +10,8 @@
 
   roles:
     - { role: vandot.k3sup, become: true }
+    # Helm is used in other playbooks to configure the cluster
+    - { role: geerlingguy.helm, become: true }
 
   tasks:
     - name: Bootstrap or Update K3s  # noqa: no-changed-when
@@ -18,7 +20,7 @@
           - /usr/local/bin/k3sup
           - install
           - --local
-          - --k3s-version=v1.31.2+k3s1
+          - --k3s-version=v1.30.6+k3s1
           - "--host={{ inventory_hostname }}"
           - "--ip={{ ansible_default_ipv4.address }}"
 ...
