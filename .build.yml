@@ -27,7 +27,7 @@ tasks:
       ln -s ~/.secret_vault .secret_vault
       # Install ansible collections first, otherwise ansible-lint will fail
       # https://github.com/ansible/ansible-lint/issues/3636
-      ansible-galaxy collection install -v --pre -r requirements.yml
+      ansible-galaxy collection install -v --pre -r collections/requirements.yml
 
   - check: |
       cd earth-xlii-cc
@@ -38,3 +38,8 @@ tasks:
       cd earth-xlii-cc
       source venv/bin/activate
       ansible-playbook --vault-password-file ~/.secret_vault site.yml
+
+triggers:
+  - action: email
+    condition: failure
+    to: dominik@wombacher.cc

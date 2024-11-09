@@ -5,6 +5,6 @@
 .secret*
 venv/
 roles/*/*
-collections/*/*
+collections/ansible_collections/*
 *.pyc
 __pycache__/
